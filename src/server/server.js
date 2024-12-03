@@ -40,7 +40,7 @@ const loadModel = require("../services/loadModel");
         status: "fail",
         message: response.message || "Terjadi kesalahan dalam melakukan prediksi",
       });
-      newResponse.code(response.output.statusCode || 400);
+      newResponse.code(400);
       return newResponse;
     }
 
